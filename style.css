@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+    html { font-size: 1.11111111vw; }
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    color: #1D1D1B;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem; /* 16px */
+    line-height: 1.625; /* 26px */
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 1025px) {
+    .contenant-principal {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 75rem; /* 1200px */
+        margin: 0 auto;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0 0 3rem;
+    color: #023E7E;
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.25; /* 50px */
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+h2 {
+    margin: 1.5rem 0 1rem;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 1.25rem; /* 20px */
+    line-height: 1.375; /* 22px */
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    ul { column-count: 2; }
+}
+
+@media only screen and (min-width: 1280px) {
+    ul { column-count: 2; }
+}
+
+
+li {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a, a:hover, a:focus, a:active {
+    color: #023E7E;
+}
+
+.section-visuel,
+.section-texte {
+    flex: 0 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-visuel,
+    .section-texte {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .section-visuel {
+        width: 48%
+    }
+    .section-texte {
+        width: 40%;
+    }
+}
+
+.section-visuel {
+    padding-bottom: 4.5rem; /* 72px */
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .section-visuel {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .visuel-principal {
+        width: 70%;
+        min-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+.logo img {
+    position: relative;
+    width: 9.5rem; /* 152px */
+    height: auto;
+    margin-top: 3.125rem; /* 50px */
+}
+
+.visuel-principal {
+    margin-top: 2rem;
+}
+
+.section-texte {
+    justify-content: center;
+    padding-top: 8rem; /* 128px */
+    padding-bottom: 8rem; /* 128px */
+}
+
+@media only screen and (max-width: 480px) {
+    .section-texte {
+        padding-bottom: 4rem;    
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-texte {
+        padding-top: 2rem;
+    }
+}
